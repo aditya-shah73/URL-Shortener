@@ -5,9 +5,10 @@
     <title>URL Shortener</title>
   </head>
   <body>
-    {% extends 'base.html' %}
+    {% for message in get_flashed_messages() %}
+    <h2>{{ message }}</h2>
+    {% endfor %}
     {% block main %}
-    <h1>Your URL: {{code}}</h1>
     {% endblock %}
   </body>
 </html>
