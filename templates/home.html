@@ -6,6 +6,10 @@
   </head>
   <body>
     <h1>URL Shortener</h1>
+    {% for message in get_flashed_messages() %}
+    <h2>{{ message }}</h2>
+    {% endfor %}
+
     <!-- <h2>{{name}}</h2> This is how you can access a variable passed from flask-->
     <form class="" action="your-url" method="post">
       <label for="url">Website URL</label>
@@ -15,7 +19,6 @@
       <input type="text" name="code" value="" required>
       <br>
       <input type="submit" value="Shorten">
-
     </form>
   </body>
 </html>
