@@ -6,11 +6,11 @@ A URL Shortener app using Flask
 Make sure you have Python3 and pip3 installed. Then follow the steps below to run the application
 
 ```
-pip3 install pyvenv
-pyvenv install
-pyvenv shell
-pyvenv install flask
-pyvenv install pytest
+$ pip3 install pyvenv
+$ pyvenv install
+$ pyvenv shell
+$ pyvenv install flask
+$ pyvenv install pytest
 ```
 
 ```
